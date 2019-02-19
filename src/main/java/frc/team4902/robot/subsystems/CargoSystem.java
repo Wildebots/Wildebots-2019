@@ -6,7 +6,7 @@ import frc.team4902.robot.Ports;
 
 public class CargoSystem extends Subsystem {
 	//Defines Instance of Cargo System
-	private static final HatchSystem INSTANCE = new HatchSystem();
+	private static final CargoSystem INSTANCE = new CargoSystem();
 	//Defines Cargo Encoder
 	public final PWMVictorSPX Motor = new PWMVictorSPX(Ports.CargoMotor.PORT);
 	
