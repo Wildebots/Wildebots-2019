@@ -4,7 +4,6 @@ import edu.wpi.first.wpilibj.PWMVictorSPX;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import frc.team4902.robot.Ports;
 
-
 public class HatchSystem extends Subsystem {
 	//Defines Instance of Hatch System
 	private static final HatchSystem INSTANCE = new HatchSystem();
