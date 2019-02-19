@@ -6,7 +6,7 @@ public enum Ports {
 
 	DriveTrainLeftSide(0), DriveTrainRightSide(9), //Ports for both sides of robot
 
-	HatchMotor(1), CargoMotor(8); //Ports for the motors that run the Hatch and Cargo systems
+	HatchMotor(8), CargoMotor(3); //Ports for the motors that run the Hatch and Cargo systems
 
 	public final int PORT;
 	
