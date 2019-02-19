@@ -5,6 +5,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
+import edu.wpi.first.wpilibj.buttons.Trigger;
+import frc.team4902.robot.commands.*;
 
 /*
     Creates instance of Xbox controller and defines button mappings
@@ -28,7 +30,8 @@ public class Input {
                 leftBumper = new JoystickButton(this, 5), 
                 rightBumper = new JoystickButton(this, 6),
                 back = new JoystickButton(this, 7), 
-                start = new JoystickButton(this, 8);
+								start = new JoystickButton(this, 8);
+
         
         //constructor
 		public XBoxInput(int port) {
@@ -92,5 +95,8 @@ public class Input {
 
         //Toggles drive type when X is pressed
 		Input.primaryXBox.X.whenPressed(RunnableCommand.create(() -> Input.toggleDriveType()));
+		Input.primaryXBox.Y.whenPressed(RunnableCommand.create(() -> new HatchOpen()));
+		Input.primaryXBox.A.whenPressed(RunnableCommand.create(() -> new HatchClose()));
+	
 	}
 }

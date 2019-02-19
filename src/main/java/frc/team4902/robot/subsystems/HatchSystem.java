@@ -3,8 +3,7 @@ package frc.team4902.robot.subsystems;
 import edu.wpi.first.wpilibj.PWMVictorSPX;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import frc.team4902.robot.Ports;
-import frc.team4902.robot.HatchOpen;
-import frc.team4902.robot.HatchClose;
+
 
 public class HatchSystem extends Subsystem {
 	//Defines Instance of Hatch System
