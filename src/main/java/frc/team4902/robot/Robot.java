@@ -23,11 +23,17 @@ public class Robot extends TimedRobot {
 
         DriveSystem.getInstance();
 
-        UsbCamera cam = CameraServer.getInstance().startAutomaticCapture();
+        UsbCamera cam = CameraServer.getInstance().startAutomaticCapture(0);
 		
 		cam.setResolution(640, 480);
 		
         cam.setFPS(30);
+
+        UsbCamera cam_2 = CameraServer.getInstance().startAutomaticCapture(1);
+
+        cam_2.setResolution(640, 480);
+
+        cam_2.setFPS(30);
         
         Input.initializeInputs();
     } 
