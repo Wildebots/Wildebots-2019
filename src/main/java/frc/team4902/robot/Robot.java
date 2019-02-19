@@ -5,7 +5,6 @@ import edu.wpi.first.wpilibj.ADXRS450_Gyro;
 import edu.wpi.first.cameraserver.CameraServer;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Scheduler;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import frc.team4902.robot.subsystems.DriveSystem;
 
 public class Robot extends TimedRobot { 

@@ -5,7 +5,6 @@ import java.util.concurrent.atomic.AtomicBoolean;
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.buttons.JoystickButton;
-import edu.wpi.first.wpilibj.buttons.Trigger;
 import frc.team4902.robot.commands.*;
 
 /*
