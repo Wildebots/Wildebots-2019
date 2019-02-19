@@ -6,20 +6,20 @@ import frc.team4902.robot.Ports;
 import frc.team4902.robot.HatchOpen;
 import frc.team4902.robot.HatchClose;
 
-public class HatchSystem extends Subsystem {
-	//Defines Instance of Hatch System
+public class CargoSystem extends Subsystem {
+	//Defines Instance of Cargo System
 	private static final HatchSystem INSTANCE = new HatchSystem();
-	//Defines Hatch Encoder
-	public final PWMVictorSPX Motor = new PWMVictorSPX(Ports.HatchMotor.PORT);
+	//Defines Cargo Encoder
+	public final PWMVictorSPX Motor = new PWMVictorSPX(Ports.CargoMotor.PORT);
 	
 	@Override
 	protected void initDefaultCommand() {}
 	
-	private HatchSystem() {
+	private CargoSystem() {
 		super();
 	}
 
-	public static HatchSystem getInstance() {
+	public static CargoSystem getInstance() {
 		return INSTANCE;
 	}
 	
