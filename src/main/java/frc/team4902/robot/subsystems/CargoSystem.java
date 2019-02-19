@@ -3,6 +3,7 @@ package frc.team4902.robot.subsystems;
 import edu.wpi.first.wpilibj.PWMVictorSPX;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import frc.team4902.robot.Ports;
+import frc.team4902.robot.commands.CargoCommand;
 
 public class CargoSystem extends Subsystem {
 	//Defines Instance of Cargo System
@@ -11,7 +12,9 @@ public class CargoSystem extends Subsystem {
 	public final PWMVictorSPX Motor = new PWMVictorSPX(Ports.CargoMotor.PORT);
 	
 	@Override
-	protected void initDefaultCommand() {}
+	protected void initDefaultCommand() {
+		setDefaultCommand(new CargoCommand());
+	}
 	
 	private CargoSystem() {
 		super();
@@ -22,14 +25,6 @@ public class CargoSystem extends Subsystem {
 	}
 	
 	public void setSpeed(double speed) {
-			Motor.set(speed);
-    }
-    
-    public void open(){
-        Motor.set(1.0);
-    }
-
-    public void close(){
-        Motor.set(-1.0);
+		Motor.set(speed);
     }
 }
